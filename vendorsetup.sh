@@ -1,0 +1,2 @@
+add_lunch_combo omni_judy-eng
+add_lunch_combo omni_judy-userdebug
