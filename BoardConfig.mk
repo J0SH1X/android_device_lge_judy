@@ -106,3 +106,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_FILES := ${OUT}/system/lib64/android.hardware.boot
 #echo "ro.build.date.utc=0"
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_FBE := true
+
+# Debug flags
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
