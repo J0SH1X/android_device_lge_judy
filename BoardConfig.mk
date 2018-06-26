@@ -72,7 +72,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 #bootable/recovery/minuitwrp/graphics_drm.cpp
 #if defined(RECOVERY_RGBX)
 #format = DRM_FORMAT_XBGR8888;
