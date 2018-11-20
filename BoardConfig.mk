@@ -68,6 +68,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+TW_IGNORE_MISC_WIPE_DATA := true
+
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
