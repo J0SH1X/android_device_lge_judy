@@ -10,7 +10,3 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 
 PRODUCT_PACKAGES += \
     update_engine_sideload
-
-PRODUCT_COPY_FILES += \
-    device/lge/judy/scripts/boot_a:$(TARGET_ROOT_OUT)/sbin/boot_a \
-    device/lge/judy/scripts/boot_b:$(TARGET_ROOT_OUT)/sbin/boot_b \

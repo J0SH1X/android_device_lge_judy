@@ -98,14 +98,12 @@ TW_NO_SCREEN_TIMEOUT := true
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TW_RECOVERY_ADDITIONAL_RELINK_FILES := ${OUT}/system/lib64/android.hardware.boot@1.0.so
 
-# Encryption
-#PLATFORM_SECURITY_PATCH := 2018-05-01
-#build/tools/buildinfo.sh
-#echo "ro.build.version.release_orig=16.1.0"
-#echo "ro.build.version.security_patch_orig=2025-12-31"
-#echo "ro.build.date.utc=0"
+# Encryption support
+TARGET_USE_UFS_ICE := true
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_FBE := true
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd hwservicemanager keymaster-3-0
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
