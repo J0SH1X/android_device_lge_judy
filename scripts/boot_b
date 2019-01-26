@@ -1,1 +1,0 @@
-dd if=/sbin/boot.img of=/dev/block/bootdevice/by-name/boot_b
