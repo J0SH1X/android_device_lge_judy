@@ -69,13 +69,20 @@ cp /v/lib64/libdrmfs.so /vendor/lib64/
 cp /v/lib64/libdrmtime.so /vendor/lib64/
 cp /v/lib64/libGPreqcancel.so /vendor/lib64/
 cp /v/lib64/libGPreqcancel_svc.so /vendor/lib64/
+cp /v/lib64/libicuuc.so /vendor/lib64/
+cp /v/lib64/libkeymasterdeviceutils.so /vendor/lib64/
+cp /v/lib64/libkeymasterprovision.so /vendor/lib64/
+cp /v/lib64/libkeymasterutils.so /vendor/lib64/
+cp /v/lib64/liblog.so /vendor/lib64/
+cp /v/lib64/libqdi.so /vendor/lib64/
+cp /v/lib64/libqdMetaData.so /vendor/lib64/
+cp /v/lib64/libqdp.so /vendor/lib64/
 cp /v/lib64/libqdutils.so /vendor/lib64/
 cp /v/lib64/libqisl.so /vendor/lib64/
-cp /v/lib64/libqservice.so /vendor/lib64/
 cp /v/lib64/libQSEEComAPI.so /vendor/lib64/
+cp /v/lib64/libqservice.so /vendor/lib64/
 cp /v/lib64/librecovery_updater_msm.so /vendor/lib64/
 cp /v/lib64/librpmb.so /vendor/lib64/
-cp /v/lib64/libsecureui.so /vendor/lib64/
 cp /v/lib64/libSecureUILib.so /vendor/lib64/
 cp /v/lib64/libsecureui_svcsock.so /vendor/lib64/
 cp /v/lib64/libspcom.so /vendor/lib64/
@@ -83,10 +90,11 @@ cp /v/lib64/libspl.so /vendor/lib64/
 cp /v/lib64/libssd.so /vendor/lib64/
 cp /v/lib64/libStDrvInt.so /vendor/lib64/
 cp /v/lib64/libtime_genoff.so /vendor/lib64/
-cp /v/lib64/libkeymasterdeviceutils.so /vendor/lib64/
-cp /v/lib64/libkeymasterprovision.so /vendor/lib64/
-cp /v/lib64/libkeymasterutils.so /vendor/lib64/
+cp /v/lib64/libtinyxml2_1.so /vendor/lib64/
+cp /v/lib64/libtinyxml2.so /vendor/lib64/
+cp /v/lib64/libxml2.so /vendor/lib64/
 cp /v/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so /vendor/lib64/
+
 cp /v/lib64/hw/bootctrl.sdm845.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.boot@1.0-impl.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so /vendor/lib64/hw/

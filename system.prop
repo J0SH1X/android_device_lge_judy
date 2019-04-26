@@ -1,1 +1,4 @@
-ro.display.series=OnePlus 6
+ro.display.series=LG V40
+ro.sf.lcd_density=640
+ro.lge.lcd_default_brightness=178
+sys.usb.controller=a600000.dwc3
