@@ -12,3 +12,6 @@ LOCAL_PATH := device/lge/judypn
 #PRODUCT_PACKAGES += \
 #    update_engine_sideload
 
+# Time&Date Fix
+PRODUCT_COPY_FILES += \
+	device/lge/judypn/prebuilt/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata

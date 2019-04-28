@@ -5,7 +5,7 @@
 /vendor			ext4	/dev/block/bootdevice/by-name/vendor					flags=slotselect;display="Vendor";backup=1
 /vendor_image		emmc	/dev/block/bootdevice/by-name/vendor					flags=slotselect
 /data			ext4	/dev/block/bootdevice/by-name/userdata					flags=encryptable=/dev/block/bootdevice/by-name/encrypt
-/firmware		vfat	/dev/block/bootdevice/by-name/modem					flags=slotselect;display="Firmware";mounttodecrypt;fsflags=ro
+/firmware		vfat	/dev/block/bootdevice/by-name/modem					flags=slotselect;display="Firmware";mounttodecrypt;fsflags=context=u:object_r:firmware_file:s0
 /misc			emmc	/dev/block/bootdevice/by-name/misc
 /modem			emmc	/dev/block/bootdevice/by-name/modem					flags=slotselect;backup=1;display="Modem"
 /dsp			emmc	/dev/block/bootdevice/by-name/dsp					flags=slotselect;backup=1;subpartitionof=/modem
@@ -18,6 +18,8 @@
 /OP			ext4	/dev/block/bootdevice/by-name/OP					flags=slotselect;backup=1;display="OP Configs";removable
 /OP_image		emmc	/dev/block/bootdevice/by-name/OP					flags=slotselect;removable;display="OP image";flashimg
 /laf			emmc	/dev/block/bootdevice/by-name/laf					flags=slotselect;backup=1;display="LAF / DL"
+/dtbo			emmc	/dev/block/bootdevice/by-name/dtbo					flags=slotselect;backup=1;display="DTBO"
+/vbmeta			emmc	/dev/block/bootdevice/by-name/vbmeta					flags=slotselect;backup=1;display="VBMETA"
 
 # Removable storage
 /usb-otg		vfat	/dev/block/sdh1 			/dev/block/sdh			flags=display="USB-OTG";storage;wipeingui;removable

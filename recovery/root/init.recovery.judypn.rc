@@ -32,6 +32,8 @@ on fs
     chown system drmrpc /dev/qseecom
     chmod 0664 /dev/ion
     chown system system /dev/ion
+    wait /dev/block/bootdevice/by-name/modem
+    mount vfat /dev/block/bootdevice/by-name/modem /firmware ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
     install_keyring
 
 on boot
@@ -52,7 +54,7 @@ on init
     #setprop crypto.ready 1
 
 # Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
-service sbinqseecomd /sbin/qseecomd
+service qseecom /sbin/qseecomd
     user root
     group root
     disabled
@@ -116,13 +118,13 @@ service ldconfigtxt /sbin/touch /sbin/ld.config.txt
     seclabel u:r:recovery:s0
 
 on property:crypto.ready=0
-    stop sbinqseecomd
+    stop qseecom
     stop keymaster-3-0
     stop gatekeeper-1-0
     stop servicemanager
 
 on property:crypto.ready=1
-    start sbinqseecomd
+    start qseecom
 
 on property:sys.listeners.registered=true
     start keymaster-3-0
