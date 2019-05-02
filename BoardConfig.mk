@@ -50,7 +50,7 @@ BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048 androidboot.configfs=true
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn
+BOARD_KERNEL_CMDLINE += androidboot.hardware=judyln
 BOARD_KERNEL_CMDLINE += androidboot.fastboot=1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE += skip_initramfs
@@ -62,7 +62,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-TARGET_PREBUILT_KERNEL := device/lge/judypn/prebuilt/Image_oreo_2.gz-dtb
+TARGET_PREBUILT_KERNEL := device/lge/judyln/prebuilt/zImage
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
@@ -98,8 +98,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 249
 TW_DEFAULT_BRIGHTNESS := 130
-TW_Y_OFFSET := 90
-TW_H_OFFSET := -90
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true

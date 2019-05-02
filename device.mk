@@ -1,5 +1,5 @@
 
-LOCAL_PATH := device/lge/judypn
+LOCAL_PATH := device/lge/judyln
 
 # Getting this to build in my local omni tree proved quite difficult so just using a prebuilt update_engine_sideload for now.
 # Oddly enough, OnePlus stock recovery does not include an update_engine_sideload binary either.
@@ -14,4 +14,4 @@ LOCAL_PATH := device/lge/judypn
 
 # Time&Date Fix
 #PRODUCT_COPY_FILES += \
-#	device/lge/judypn/prebuilt/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
+#	device/lge/judyln/prebuilt/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata

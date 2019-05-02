@@ -1,1 +1,1 @@
-add_lunch_combo omni_judypn-eng
+add_lunch_combo omni_judyln-eng
