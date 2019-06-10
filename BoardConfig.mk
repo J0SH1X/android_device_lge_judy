@@ -114,6 +114,11 @@ TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_EDL_MODE := true
 
+#EXTRAS
+USE_RECOVERY_INSTALLER := true
+RECOVERY_INSTALLER_PATH := device/lge/judyln/installer
+TW_EXCLUDE_TWRPAPP := true
+
 # We can use the factory reset button combo to enter recovery safely
 TW_IGNORE_MISC_WIPE_DATA := true
 
