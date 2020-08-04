@@ -15,7 +15,7 @@
 /efsc		emmc	/dev/block/bootdevice/by-name/fsc					flags=backup=1;subpartitionof=/efs1
 /efsg		emmc	/dev/block/bootdevice/by-name/fsg					flags=backup=1;subpartitionof=/efs1
 #/oem		ext4	/dev/block/bootdevice/by-name/oem					flags=slotselect;backup=1;display="OEM"
-/OP		squashfs	/dev/block/bootdevice/by-name/OP					flags=slotselect;backup=1;display="Product"
+/product		squashfs	/dev/block/bootdevice/by-name/OP					flags=slotselect;backup=1;display="Product"
 /encrypt	emmc	/dev/block/bootdevice/by-name/encrypt
 
 # Removable storage
